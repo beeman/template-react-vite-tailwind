@@ -1,10 +1,10 @@
-import {ReactNode, Suspense, useEffect, useRef} from 'react'
-import toast, {Toaster} from 'react-hot-toast'
-import {Link, useLocation} from 'react-router-dom'
+import { ReactNode, Suspense, useEffect, useRef } from 'react'
+import toast, { Toaster } from 'react-hot-toast'
+import { Link, useLocation } from 'react-router-dom'
 
-import {AccountChecker} from '../account/account-ui'
-import {ClusterChecker, ClusterUiSelect, ExplorerLink} from '../cluster/cluster-ui'
-import {WalletButton} from '../solana/solana-provider'
+import { AccountChecker } from '../account/account-ui'
+import { ClusterChecker, ClusterUiSelect, ExplorerLink } from '../cluster/cluster-ui'
+import { WalletButton } from '../solana/solana-provider'
 
 export function UiLayout({ children, links }: { children: ReactNode; links: { label: string; path: string }[] }) {
   const pathname = useLocation().pathname

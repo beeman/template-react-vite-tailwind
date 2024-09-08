@@ -1,9 +1,15 @@
-import {AnchorProvider} from '@coral-xyz/anchor'
-import {WalletError} from '@solana/wallet-adapter-base'
-import {AnchorWallet, ConnectionProvider, useConnection, useWallet, WalletProvider,} from '@solana/wallet-adapter-react'
-import {WalletModalProvider, WalletMultiButton} from '@solana/wallet-adapter-react-ui'
-import {ReactNode, useCallback, useMemo} from 'react'
-import {useCluster} from '../cluster/cluster-data-access'
+import { AnchorProvider } from '@coral-xyz/anchor'
+import { WalletError } from '@solana/wallet-adapter-base'
+import {
+  AnchorWallet,
+  ConnectionProvider,
+  useConnection,
+  useWallet,
+  WalletProvider,
+} from '@solana/wallet-adapter-react'
+import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-react-ui'
+import { ReactNode, useCallback, useMemo } from 'react'
+import { useCluster } from '../cluster/cluster-data-access'
 
 import('@solana/wallet-adapter-react-ui/styles.css')
 
@@ -31,4 +37,3 @@ export function useAnchorProvider() {
 
   return new AnchorProvider(connection, wallet as AnchorWallet, { commitment: 'confirmed' })
 }
-
