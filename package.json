@@ -46,25 +46,8 @@
     "vite-tsconfig-paths": "^5.0.1"
   },
   "create-solana-dapp": {
-    "removeAfterInit": true,
-    "rename": {
-      "counter": {
-        "to": "{{name}}",
-        "paths": [
-          "anchor",
-          "src"
-        ]
-      }
-    },
-    "run": [
-      "echo 'Hello, from init!'",
-      "echo 'This is your new Solana dApp.'",
-      "echo 'To get started, run:'",
-      "echo '  pnpm dev'",
-      "echo 'To build your app:'",
-      "echo '  pnpm build'",
-      "echo 'To deploy your app:'",
-      "echo '  pnpm deploy'"
-    ]
+    "versions": {
+      "solana": "1.18.0"
+    }
   }
 }
