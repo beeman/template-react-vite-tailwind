@@ -1,5 +1,3 @@
-'use client'
-
 import { clusterApiUrl, Connection } from '@solana/web3.js'
 
 import { atom, useAtomValue, useSetAtom } from 'jotai'
